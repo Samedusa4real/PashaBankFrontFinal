@@ -1,5 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 @import './header/header';
 @import './slider-section/slider';
+@import './solve-business-section/solve-business';
+@import './helpful-products/helpful-products';
+@import './website-profits/website-profits';
+@import './subscription/subscription';
+@import './mobile-bank/mobile-bank';
+@import './currency-section/currency';
+@import './footer/footer';
+
 
 
 
