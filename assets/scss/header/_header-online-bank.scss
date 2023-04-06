@@ -1,0 +1,33 @@
+.header-online-bank {
+    margin-left: auto;
+
+    .btn {
+        background-color: #058d66;
+        color: #fff;
+        display: flex;
+        font-size: 14px;
+
+        i {
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+    }
+}
+
+.header-online-bank button:hover {
+    opacity: 0.7;
+    background-color: #058d66;
+    color: #fff;
+    transition: opacity 1s;
+}
+
+.header-logo {
+    margin-right: 56px;
+    display: flex;
+    width: 76px;
+    height: 32px;
+}
+
+.online-bank-menu {
+    display: none;
+}
