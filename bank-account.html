@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./js/accounts-accordion.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
+    <script src="https://kit.fontawesome.com/460a2c75b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Hesablar | PASHA Bank</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-section d-flex align-items-center">
+            <a class="header-logo d-flex" href="main.html">
+                <img src="./assets/images/pasha-logo.svg" alt="Pasha Bank logo" />
+            </a>
+
+            <a style="color: black;" class="for-more" href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <ul class="header-menu tabs">
+
+                <li class="nav-item  nav-item-dropdown ">
+                    <a class="nav-item-link" href="main.html">
+                        Biznes üçün xidmətlər
+                    </a>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-container">
+                            <div class="row">
+
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class=" menu-item-link" href="accounts">
+                                                Biznes üçün hesab
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="salary-cards">
+                                                Əməkhaqqı layihəsi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="payments">
+                                                Ödənişlər
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link" href="business-cards">
+                                                Biznes kartlar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="acquiring">
+                                                POS–terminal və E–kassa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link " href="ecommerce">
+                                                Elektron ticarət
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="pay-by-link">
+                                                Linklə ödəniş
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item-dropdown">
+                    <a class="nav-item-link " href="main.html">
+                        Kreditlər
+                    </a>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-container">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link" href="onlayn-biznes-kredit">
+                                                Onlayn biznes kreditləri
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="business-loans">
+                                                Biznes kreditləri
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/51" target="_blank">
+                                                Gömrük kartı üzrə kredit xətti
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="sif-loans">
+                                                SİF Kreditləri
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item-dropdown">
+                    <a class="nav-item-link" href="main.html">
+                        Faktorinq
+                    </a>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-container">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-sm-6">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/29" target="_blank">
+                                                İnvoysların maliyyələşdirilməsi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/sme_purchase_order_finance"
+                                                target="_blank">
+                                                Alış sifarişi əsasında maliyyələşmə
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/63" target="_blank">
+                                                Təchizat zəncirinin maliyyələşdirilməsi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8 col-sm-6 menu-banner__wrapper">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item-dropdown">
+                    <a class="nav-item-link" href="main.html">
+                        Sənədli əməliyyatlar
+                    </a>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-container">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/45" target="_blank">
+                                                Ekspress-Tender qarantiyası
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="guarantees">
+                                                Bank qarantiyası
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/36" target="_blank">
+                                                Akkreditiv
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/37" target="_blank">
+                                                İnkasso
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/38" target="_blank">
+                                                Ticarətin maliyyələşdirilməsi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item-dropdown">
+                    <a class="nav-item-link  " href="main.html">
+                        Əlavə xidmətlər
+                    </a>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-container">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/12" target="_blank">
+                                                İnkassasiya
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/14" target="_blank">
+                                                Depozitlər
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/sme_banking/az/node/8" target="_blank">
+                                                Bank seyfləri
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/non_finance/az/node/6" target="_blank">
+                                                Bulud CRM
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <ul>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/non_finance/az/node/8" target="_blank">
+                                                ÇatBot
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link"
+                                                href="https://www.pashabank.az/non_finance/az/node/7" target="_blank">
+                                                Elektron-ticarət üçün mobil tətbiq
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="umico-masterpass">
+                                                Umico MasterPass
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item-link" href="mobile-app">
+                                                PAŞA Biznes
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="header-online-bank">
+                <button class="btn">
+                    <span>Onlayn Bank</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+
+                <a class="online-bank-toggle d-md-none">
+                    <i style="color: black" class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <ul class="online-bank-menu">
+                    <li class="online-bank-option">
+                        <a href="https://pashabank.digital" target="__blank">
+                            Hüquqi şəxslər və fərdi sahibkarlar üçün
+                        </a>
+                    </li>
+                    <li class="online-bank-option">
+                        <a href="https://ib2.pashabank.az/ibank/banking#sms_code_retail" target="__blank">
+                            Fiziki şəxslər üçün
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="slide-account">
+            <div class="slides-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                            <h1 class="styles-h3 font-weight-normal margin-bottom-3">
+                                Bir neçə dəqiqəyə Bank hesabına sahib olun
+                            </h1>
+                            <p class="body-1 margin-bottom-5">
+                                Hesab üzrə rekvizitlərinizi dərhal əldə edin.
+                            </p>
+                            <a style="background-color: #058D66; color: white;"
+                                class="btn btn--md d-inline-block text-center"
+                                href="https://www.pashabank.digital/login#/signup" target="_blank">
+                                Müştəri ol
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="online-bank-account" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="styles-h4 font-weight-normal margin-bottom-2">
+                            Bank hesabınızı onlayn və ödənişsiz açın, hesab üzrə rekvizitlərinizi dərhal əldə edin.
+                        </h2>
+                        <p style="font-size: 15px; color: gray;" class="body-1">
+                            Müştərimiz olmaq üçün banka gəlməyinizə ehtiyac yoxdur. İstədiyiniz yerdən hesabınızı onlayn
+                            açaraq
+                            dəyərli vaxtınızı biznesinizin inkişafına sərf edin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="options-list">
+                <div class="container">
+                    <div class="row">
+                        <div class="options-container">
+                            <div class="options">
+                                <a href="https://pashabank.digital/login#/signup" target="_blank">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="margin-bottom-2">“Müştəri ol” düyməsinə klikləyin</h6>
+                                            <i style="color: #058D66; font-size: 25px;" class="fa-solid fa-link"></i>
+                                        </div>
+                                        <span class="link">
+                                            <span>Müştəri ol</span>
+                                            <i style="margin-top: 4px; margin-left: 7px;"
+                                                class="fa-solid fa-arrow-right-long"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="options">
+                                <a href="https://bit.ly/2BMWB48" target="_blank">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="margin-bottom-2">ASAN İmza məlumatlarını daxil edin</h6>
+                                            <i style="color: red; font-size: 30px;" class="fa-solid fa-fingerprint"></i>
+                                        </div>
+                                        <span class="link">
+                                            <span id="acc.steps.ASAN">ASAN İmzanı necə əldə etməli</span>
+                                            <i style="margin-top: 4px; margin-left: 7px;"
+                                                class="fa-solid fa-arrow-right-long"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="options">
+                                <a href="https://pashabank.digital/login" target="_blank">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="margin-bottom-2">Qeydiyyatdan keçərək Onlayn Banka daxil olun
+                                            </h6>
+                                            <i style="color: orange; font-size: 30px;" class="fa-solid fa-check"></i>
+                                        </div>
+                                        <span class="link">
+                                            <span id="acc.steps.login">Onlayn Banka keçid et</span>
+                                            <i style="margin-top: 4px; margin-left: 7px;"
+                                                class="fa-solid fa-arrow-right-long"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="benefit-accounts" style="margin-top: 60px">
+            <div class="container">
+                <h2 class="styles-h4 font-weight-normal" style="margin-bottom: 36px;">Üstünlüklər</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="account-benefit">
+                            <i style="color: #058D66; font-size: 25px;" class="fa-solid fa-desktop"></i>
+                            <div class="benefits-container">
+                                <h3 class="styles-h6 margin-bottom-1">Rahat</h3>
+                                <p class="text-md">
+                                    Hesabınızı dünyanın istənilən nöqtəsindən, bir neçə dəqiqəyə onlayn açın və
+                                    rekvizitləri dərhal əldə edin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="account-benefit">
+                            <i style="color: orange; font-size: 25px;" class="fa-solid fa-clock"></i>
+                            <div class="benefits-container">
+                                <h3 class="styles-h6 margin-bottom-1">Sürətli</h3>
+                                <p class="text-md">
+                                    Şəxsiyyətinizi qısa müddətdə video zəng ilə təsdiqləyin. Hesabınız 24 saat ərzində
+                                    aktivləşdiriləcək və sizə bu barədə məlumat təqdim ediləcək.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="account-benefit">
+                            <i style="color: red; font-size: 25px;"
+                                class="fa-sharp fa-solid fa-money-bill-trend-up"></i>
+                            <div class="benefits-container">
+                                <h3 class="styles-h6 margin-bottom-1">Sərfəli</h3>
+                                <p class="text-md">
+                                    İlk hesabınızı açdıqdan sonra onlayn bankda əlavə hesablar açmaq imkanınız da var.
+                                    Üstəlik, istənilən valyutada və tamamilə pulsuz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="account-benefit">
+                            <i style="color: blue; font-size: 25px;" class="fa-solid fa-suitcase"></i>
+                            <div class="benefits-container">
+                                <h3 class="styles-h6 margin-bottom-1">Funksional</h3>
+                                <p class="text-md">
+                                    Onlayn bank xidmətinə avtomatik qoşulun və bir çox bank əməliyyatlarını daha rahat
+                                    və operativ həyata keçirin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acc-subscription" style="margin-top: 76px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8 col-md-8">
+                        <h3 class="margin-bottom-3">Biznesə yeni başlayırsınız?</h3>
+                        <div
+                            class="text-container d-flex flex-md-column flex-sm-column flex-column flex-lg-row justify-content-between">
+                            <div class="d-flex flex-column margin-bottom-2">
+                                <div class="margin-bottom-1">Hesab üzrə bir çox əməliyyatlar
+                                </div>
+                                <h5>Onlayn </h5>
+                            </div>
+
+                            <div class="d-flex flex-column margin-bottom-2">
+                                <div class="margin-bottom-1">Ödəniş əməliyyatları </div>
+                                <h5>0 AZN-dən başlayaraq</h5>
+                            </div>
+
+                            <div class="d-flex flex-column margin-bottom-2">
+                                <div class="margin-bottom-1"> </div>
+                                <h5> </h5>
+                            </div>
+                        </div>
+
+                        <a style="background-color: #058D66; color: white;" class="btn d-inline-block text-center"
+                            href="https://www.pashabank.digital/login#/signup" target="_blank">
+                            Müştəri ol
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscription">
+            <div class="modal fade bundles__modal" id="supportModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header" style="border:none!important;">
+                            <h5 class="modal-title" id="supportModalLabel">"Dəstək" tarif paketi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <table class="table table__bordered bundles__table">
+                                <tbody>
+                                    <tr>
+                                        <td>Aylıq ödəniş</td>
+                                        <td>
+                                            <h4 class="color-green-500">0 AZN</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hesabın açılması</td>
+                                        <td>
+                                            <span class="subtitle-1 color-green-500">
+                                                Pulsuz
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Korporativ / Gömrük / Tacir kartı </td>
+                                        <td>32 AZN və ya 16 USD/EUR/GBP (Lokal 15 AZN)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nağdlaşdırma</td>
+                                        <td>0.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bankdaxili köçürmə</td>
+                                        <td>
+                                            <div>
+                                                <span>Onlayn Bankdan pulsuz</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Milli valyutada ölkə daxili köçürmələr (təcili icra olunma)</td>
+                                        <td>0.21% (min. 3 AZN – maks. 300 AZN)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Milli valyutada ölkə daxili köçürmələr (adi icra olunma)</td>
+                                        <td>
+                                            <div class="margin-bottom-1">
+                                                0.18% (min. 2AZN- maks. 200 AZN)
+                                            </div>
+                                            <div>
+                                                Bankın Biznes Mərkəzlərində – 0.15%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xarici valyutada ödənişlər </td>
+                                        <td>
+                                            <div>
+                                                <span>
+                                                    0.35% (min. 35 USD/EUR – maks. 400 USD/EUR)
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valyuta mübadiləsi</td>
+                                        <td>
+                                            <span>
+                                                0.35%–dək (fərdi qaydada baxıla bilər)
+                                                <br />
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount__container">
+                                            POS-terminal
+                                        </td>
+                                        <td>
+                                            <div class="margin-bottom-1">
+                                                2.2% – Xarici bankların kartları,
+                                            </div>
+                                            <div>
+                                                2% – Yerli bankların kartları
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elektron ticarət / Linklə ödəniş</td>
+                                        <td>
+                                            <div class="margin-bottom-1">
+                                                2% – Xarici bankların kartları,
+                                            </div>
+                                            <div>
+                                                2% – Yerli bankların kartları
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="modal-footer" style="border:none!important;">
+                            <a class="btn btn--md d-inline-block text-center" href="https://bit.ly/2zjiNCd."
+                                target="_blank">
+                                Hesab aç
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-md-6">
+                        <h2 class="font-weight-normal">Tarif paketləri</h2>
+                        <p style="color: #00000099;">Kiçik və orta bizneslər üçün uyğun tarif paketləri.
+                            Biznesinizin ehtiyaclarına uyğun tarif paketini seçin, bir çox üstünlüklərdən faydalanın.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscription-products">
+                <div class="container">
+                    <div class="subscription-products-container">
+                        <div class="subscription-product">
+                            <h5 class="margin-bottom-3">Dəstək</h5>
+                            <img alt="Support" class="margin-bottom-2" src="./assets/images/support.svg" />
+                            <div class="subscription-price d-flex align-items-baseline margin-bottom-1">
+                                <h2>0</h2>
+                                <img alt="AZN symbol" class="margin-right-1" src="./assets/images/azn.svg" />
+                                <p>
+                                    /aylıq
+                                </p>
+                            </div>
+                            <p>
+                                Biznesə yeni başlayırsınız?
+                            </p>
+                            <ul class="list list--bullet margin-bottom-5">
+                                <li>
+                                    <i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>Hesab
+                                    açma: <span class="color-green-500">Pulsuz</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Ölkədaxili AZN ödənişlər:
+                                    <span class="color-green-500">0.18%</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Ölkədaxili təcili AZN ödənişlər:
+                                    <span class="color-green-500">0.21%</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Beynəlxalq ödənişlər:
+                                    <span class="color-green-500">0.35%</span>
+                                </li>
+                            </ul>
+                            <div class="subscription-buttons">
+                                <button style="background-color: #fff; color: #058d66;" class="btn" data-toggle="modal"
+                                    data-target="#supportModal">
+                                    Daha ətraflı
+                                </button>
+                                <a style="background-color: #058d66; color: #fff;" class="btn"
+                                    href="https://pashabank.digital/login#/signup" target="_blank">
+                                    Hesab aç
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="subscription-product">
+                            <h5 class="margin-bottom-3">Yüksəl</h5>
+                            <img alt="Rise" class="margin-bottom-2" src="./assets/images/rise.svg" />
+                            <div class="subscription-price d-flex align-items-baseline margin-bottom-1">
+                                <h2>40</h2>
+                                <img alt="AZN symbol" class="margin-right-1" src="./assets/images/azn.svg" />
+                                <p>
+                                    /aylıq
+                                </p>
+                            </div>
+                            <p>
+                                Biznesinizi inkişaf etdirmək istəyirsiniz?
+                            </p>
+                            <ul class="list list--bullet margin-bottom-5">
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Hesab açma: <span class="color-green-500">Pulsuz</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Ölkədaxili AZN ödənişlər:
+                                    <span class="color-green-500">0.12%</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Ölkədaxili təcili AZN ödənişlər:
+                                    <span class="color-green-500">0.15%</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Beynəlxalq ödənişlər:
+                                    <span class="color-green-500">0.28%</span>
+                                </li>
+                            </ul>
+                            <div class="subscription-buttons">
+                                <button style="background-color: #fff; color: #058d66;" class="btn" data-toggle="modal"
+                                    data-target="#supportModal">
+                                    Daha ətraflı
+                                </button>
+                                <a style="background-color: #058d66; color: #fff;" class="btn"
+                                    href="https://pashabank.digital/login#/signup" target="_blank">
+                                    Hesab aç
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="subscription-product">
+                            <h5 class="margin-bottom-3">Parla</h5>
+                            <img alt="Shine" class="margin-bottom-2" src="./assets/images/shine.svg" />
+                            <div class="subscription-price d-flex align-items-baseline margin-bottom-1">
+                                <h2>110</h2>
+                                <img alt="AZN symbol" class="margin-right-1" src="./assets/images/azn.svg" />
+                                <p>
+                                    /aylıq
+                                </p>
+                            </div>
+                            <p>
+                                Biznesiniz əmin addımlarla irəliləyir?
+                            </p>
+                            <ul class="list list--bullet margin-bottom-5">
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Hesab açma: <span class="color-green-500">Pulsuz</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Ölkədaxili AZN ödənişlər:
+                                    <span class="color-green-500">0.11%</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Ölkədaxili təcili AZN ödənişlər:
+                                    <span class="color-green-500">0.14%</span>
+                                </li>
+                                <li><i style="margin-right: 10px; font-size: 20px;" class="fa-solid fa-check"></i>
+                                    Beynəlxalq ödənişlər:
+                                    <span class="color-green-500">0.25%</span>
+                                </li>
+                            </ul>
+                            <div class="subscription-buttons">
+                                <button style="background-color: #fff; color: #058d66;" class="btn" data-toggle="modal"
+                                    data-target="#supportModal">
+                                    Daha ətraflı
+                                </button>
+                                <a style="background-color: #058d66; color: #fff;" class="btn"
+                                    href="https://pashabank.digital/login#/signup" target="_blank">
+                                    Hesab aç
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accounts-accordion" style="margin-top: 120px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 48px;">
+                        <h4>Ən çox verilən suallar</h4>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="accordion">
+                            <div class="accordion-item margin-bottom-2">
+                                <div class="accordion-header d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion-header-text">
+                                        Hesab üzrə hansı tariflər mövcuddur?
+                                    </p>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus d-none"></i> 
+                                </div>
+
+                                <div class="accordion-content">
+                                    <p class="color-black--medium-emphasis subtitle-1">
+                                        Kiçik və orta sahibkarlar üçün 3 fərqli tarif paketi mövcuddur:
+                                    </p>
+                                    <p class="color-black--medium-emphasis subtitle-1">
+                                        “Dəstək” - aylıq ödənişsiz
+                                    </p>
+                                    <p class="color-black--medium-emphasis subtitle-1">
+                                        “Yüksəl” - aylıq 40 AZN
+                                    </p>
+                                    <p class="color-black--medium-emphasis subtitle-1">
+                                        “Parla” - aylıq 110 AZN
+                                    </p>
+                                    <p class="color-black--medium-emphasis subtitle-1">
+                                        Onlayn bankda “Şirkət profili”-nə keçid edərək “Tariflər” bölməsində hazırda
+                                        qoşulduğunuz tarifi görə bilərsiniz.
+                                    </p>
+                                    <a href="tariff" class="color-green-500 subtitle-1 redirection">
+                                        Tariflər haqqında ətraflı məlumat:
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item margin-bottom-2">
+                                <div class="accordion-header d-flex justify-content-between align-items-center">
+                                    <p>
+                                        Hesab üzrə rekvizitləri necə əldə edə bilərəm?
+                                    </p>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus d-none"></i> 
+                                </div>
+
+                                <div class="accordion-content">
+                                    <p>
+                                        Onlayn bankda "Hesablar" bölməsinə keçid edərək rekvizitləri elektron ünvana
+                                        göndərə bilərsiniz. Rekvizitləri bütün hesablar üzrə və ya tək-tək əldə
+                                        etmək mümkündür.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item margin-bottom-2">
+                                <div class="accordion-header d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion-header-text">
+                                        Cari hesablara necə və hansı saatlarda mədaxil edə bilərəm?
+                                    </p>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus d-none"></i> 
+                                </div>
+
+                                <div class="accordion-content">
+                                    <p>
+                                        Hesaba mədaxili “PAŞA Bank”ın kassaları, Bankın ADM-ləri vasitəsi ilə 09:30
+                                        – 17:30 saatlarında, “MilliÖn” və “E-manat” ödəniş terminalları ilə 24/7
+                                        mədaxil edə bilərsiniz.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item margin-bottom-2">
+                                <div class="accordion-header d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion-header-text">
+                                        Hesab üzrə hansı tariflər mövcuddur?
+                                    </p>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus d-none"></i> 
+                                </div>
+
+                                <div class="accordion-content">
+                                    <p>
+                                        Bank hesabına daxil olmuş “Alınmalı” növ sərəncamı məbləği tam ödəmək şərti
+                                        ilə “Sərəncamlar” bölməsindən icra etmək olar. Eyni zamanda
+                                        sme.support@pashabank.az ünvanına müraciət etməklə həm “Alınmalı”, həm
+                                        “Dondurulmalı” növ sərəncamları icra edə bilərsiniz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="accordion">
+                            <div class="accordion__item margin-bottom-2">
+                                <a class="accordion__header d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion__header-text">
+                                        Hesab üzrə hansı tariflər mövcuddur?
+                                    </p>
+                                    <img src="themes/sme/assets/images/salary-cards/plus-green.svg" data-inline-svg
+                                        class="accordion__header-plus-icon" />
+                                    <img src="themes/sme/assets/images/salary-cards/minus-green.svg" data-inline-svg
+                                        class="accordion__header-minus-icon" />
+                                </a>
+
+                                <div id="accountsFaqItem1" class="collapse show accordion__body"
+                                    data-parent="#accounts-faq-accordion">
+                                    <div class="card-body padding-top-3">
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            Kiçik və orta sahibkarlar üçün 3 fərqli tarif paketi mövcuddur:
+                                        </p>
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            “Dəstək” - aylıq ödənişsiz
+                                        </p>
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            “Yüksəl” - aylıq 40 AZN
+                                        </p>
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            “Parla” - aylıq 110 AZN
+                                        </p>
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            Onlayn bankda “Şirkət profili”-nə keçid edərək “Tariflər” bölməsində hazırda
+                                            qoşulduğunuz tarifi görə bilərsiniz.
+                                        </p>
+                                        <a href="tariff" class="color-green-500 subtitle-1 redirection">
+                                            Tariflər haqqında ətraflı məlumat:
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item margin-bottom-2">
+                                <a class="accordion__header collapsed d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion__header-text">
+                                        Hesab üzrə rekvizitləri necə əldə edə bilərəm?
+                                    </p>
+                                    <img src="themes/sme/assets/images/salary-cards/plus-green.svg" data-inline-svg
+                                        class="accordion__header-plus-icon" />
+                                    <img src="themes/sme/assets/images/salary-cards/minus-green.svg" data-inline-svg
+                                        class="accordion__header-minus-icon" />
+                                </a>
+
+                                <div id="accountsFaqItem2" class="collapse accordion__body"
+                                    data-parent="#accounts-faq-accordion">
+                                    <div class="card-body padding-top-3">
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            Onlayn bankda "Hesablar" bölməsinə keçid edərək rekvizitləri elektron ünvana
+                                            göndərə bilərsiniz. Rekvizitləri bütün hesablar üzrə və ya tək-tək əldə
+                                            etmək mümkündür.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item margin-bottom-2">
+                                <a class="accordion__header collapsed d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion__header-text">
+                                        Cari hesablara necə və hansı saatlarda mədaxil edə bilərəm?
+                                    </p>
+                                    <img src="themes/sme/assets/images/salary-cards/plus-green.svg" data-inline-svg
+                                        class="accordion__header-plus-icon" />
+                                    <img src="themes/sme/assets/images/salary-cards/minus-green.svg" data-inline-svg
+                                        class="accordion__header-minus-icon" />
+                                </a>
+
+                                <div id="accountsFaqItem3" class="collapse accordion__body"
+                                    data-parent="#accounts-faq-accordion">
+                                    <div class="card-body padding-top-3">
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            Hesaba mədaxili “PAŞA Bank”ın kassaları, Bankın ADM-ləri vasitəsi ilə 09:30
+                                            – 17:30 saatlarında, “MilliÖn” və “E-manat” ödəniş terminalları ilə 24/7
+                                            mədaxil edə bilərsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item margin-bottom-2">
+                                <a class="accordion__header collapsed d-flex justify-content-between align-items-center">
+                                    <p class="color-green-500 subtitle-1 accordion__header-text">
+                                        Hesaba daxil olan sərəncamı necə silmək olar?
+                                    </p>
+                                    <img src="themes/sme/assets/images/salary-cards/plus-green.svg" data-inline-svg
+                                        class="accordion__header-plus-icon" />
+                                    <img src="themes/sme/assets/images/salary-cards/minus-green.svg" data-inline-svg
+                                        class="accordion__header-minus-icon" />
+                                </a>
+
+                                <div id="accountsFaqItem4" class="collapse accordion__body"
+                                    data-parent="#accounts-faq-accordion">
+                                    <div class="card-body padding-top-3">
+                                        <p class="color-black--medium-emphasis subtitle-1">
+                                            Bank hesabına daxil olmuş “Alınmalı” növ sərəncamı məbləği tam ödəmək şərti
+                                            ilə “Sərəncamlar” bölməsindən icra etmək olar. Eyni zamanda
+                                            sme.support@pashabank.az ünvanına müraciət etməklə həm “Alınmalı”, həm
+                                            “Dondurulmalı” növ sərəncamları icra edə bilərsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

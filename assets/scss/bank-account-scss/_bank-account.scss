@@ -1,0 +1,59 @@
+@import './slide-account';
+@import './benefits-accounts';
+@import './acc-subscription';
+
+.accordion > div{
+    margin-bottom: 20px;
+    
+}
+
+.accordion-item {
+    border: 1px solid #d6d7d6;
+    border-radius: 6px;
+    padding: 16px 20px 16px 16px;
+    background-color: #fff
+}
+
+.accordion-item:last-child {
+    margin-bottom: 0 !important
+}
+
+.accordion-header {
+    cursor: pointer
+}
+
+.accordion-header-text {
+    margin-right: 8px;
+    max-width: 90%;
+    transition: all .3s cubic-bezier(.23, 1, .32, 1)
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.accordion-content {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    a{
+        color: #099a71;
+    }
+}
+
+
+.accordion-item.active .accordion-header p{
+    background-color: #ccc;
+    color: #099a71;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-content {
+    display: none;
+}
+
+

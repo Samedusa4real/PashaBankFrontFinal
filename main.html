@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/460a2c75b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <title>Pasha Bank</title>
+    <title>Ana səhifə | PASHA Bank</title>
 </head>
 
 <body>
@@ -430,7 +430,7 @@
             <div class="options-list">
                 <div class="container">
                     <div class="options-container">
-                        <a class="options" href="accounts">
+                        <a class="options" href="./bank-account.html">
                             <div class="d-flex flex-column">
                                 <i style="color: green; font-size: 35px;"
                                     class="fa-solid fa-clipboard-list margin-bottom-3"></i>
@@ -634,6 +634,121 @@
         </section>
 
         <section id="subscription">
+            <div class="modal fade bundles__modal" id="supportModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header" style="border:none!important;">
+                            <h5 class="modal-title" id="supportModalLabel">"Dəstək" tarif paketi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <table class="table table__bordered bundles__table">
+                                <tbody>
+                                    <tr>
+                                        <td>Aylıq ödəniş</td>
+                                        <td>
+                                            <h4 class="color-green-500">0 AZN</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hesabın açılması</td>
+                                        <td>
+                                            <span class="subtitle-1 color-green-500">
+                                                Pulsuz
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Korporativ / Gömrük / Tacir kartı </td>
+                                        <td>32 AZN və ya 16 USD/EUR/GBP (Lokal 15 AZN)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nağdlaşdırma</td>
+                                        <td>0.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bankdaxili köçürmə</td>
+                                        <td>
+                                            <div>
+                                                <span>Onlayn Bankdan pulsuz</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Milli valyutada ölkə daxili köçürmələr (təcili icra olunma)</td>
+                                        <td>0.21% (min. 3 AZN – maks. 300 AZN)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Milli valyutada ölkə daxili köçürmələr (adi icra olunma)</td>
+                                        <td>
+                                            <div class="margin-bottom-1">
+                                                0.18% (min. 2AZN- maks. 200 AZN)
+                                            </div>
+                                            <div>
+                                                Bankın Biznes Mərkəzlərində – 0.15%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xarici valyutada ödənişlər </td>
+                                        <td>
+                                            <div>
+                                                <span>
+                                                    0.35% (min. 35 USD/EUR – maks. 400 USD/EUR)
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valyuta mübadiləsi</td>
+                                        <td>
+                                            <span>
+                                                0.35%–dək (fərdi qaydada baxıla bilər)
+                                                <br />
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount__container">
+                                            POS-terminal
+                                        </td>
+                                        <td>
+                                            <div class="margin-bottom-1">
+                                                2.2% – Xarici bankların kartları,
+                                            </div>
+                                            <div>
+                                                2% – Yerli bankların kartları
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elektron ticarət / Linklə ödəniş</td>
+                                        <td>
+                                            <div class="margin-bottom-1">
+                                                2% – Xarici bankların kartları,
+                                            </div>
+                                            <div>
+                                                2% – Yerli bankların kartları
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="modal-footer" style="border:none!important;">
+                            <a id="acc.start.info.apply" class="btn btn--success btn--md d-inline-block text-center"
+                                href="https://bit.ly/2zjiNCd." target="_blank">
+                                Hesab aç
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-10 col-md-6">
@@ -1321,7 +1436,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
+    <!-- <script>
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
             autoplay: {
@@ -1345,7 +1460,7 @@
                 el: '.swiper-scrollbar',
             },
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
