@@ -1,14 +1,15 @@
-const modalButtons = document.querySelectorAll("#subscription .subscription-product button")
-let modal = document.getElementById("simpleModal");
-let closeBtn = document.getElementsByClassName("closeBtn")[0]
+export function subModal() {
+    const modalButtons = document.querySelectorAll("#subscription .subscription-product button")
+    let modal = document.getElementById("simpleModal");
+    let closeBtn = document.getElementsByClassName("closeBtn")[0]
 
-modalButtons.forEach((modalButton) => {
-    modalButton.addEventListener("click", function () {
-        let modalButtonId = modalButton.id
-        console.log(modalButtonId);
-        modal.style.display = 'block'
-        if (modalButtonId === "help-button") {
-            modal.innerHTML = `
+    modalButtons.forEach((modalButton) => {
+        modalButton.addEventListener("click", function () {
+            let modalButtonId = modalButton.id
+            console.log(modalButtonId);
+            modal.style.display = 'block'
+            if (modalButtonId === "help-button") {
+                modal.innerHTML = `
             <div class="modal-content" style="width: 800px; bottom: 220px;">
                 <div class="modal-header" style="border:none!important;">
                     <h5 class="modal-title">"Dəstək" tarif paketi</h5>
@@ -117,9 +118,9 @@ modalButtons.forEach((modalButton) => {
                     </a>
                 </div>
             </div>`
-        }
-        else if(modalButtonId === "rise-button"){
-            modal.innerHTML = `<div class="modal-content" style="width: 800px; bottom: 220px;">
+            }
+            else if (modalButtonId === "rise-button") {
+                modal.innerHTML = `<div class="modal-content" style="width: 800px; bottom: 220px;">
             <div class="modal-header" style="border:none!important;">
                 <h5 class="modal-title">Biznesinizi inkişaf etdirmək istəyirsiniz?</h5>
                 <span class="closeBtn">&times;</span>
@@ -228,9 +229,9 @@ modalButtons.forEach((modalButton) => {
                 </a>
             </div>
         </div>`
-        }
-        else if(modalButtonId === "shine-button"){
-            modal.innerHTML = `<div class="modal-content" style="width: 800px; bottom: 220px;">
+            }
+            else if (modalButtonId === "shine-button") {
+                modal.innerHTML = `<div class="modal-content" style="width: 800px; bottom: 220px;">
             <div class="modal-header" style="border:none!important;">
                 <h5 class="modal-title">"Dəstək" tarif paketi</h5>
                 <span class="closeBtn">&times;</span>
@@ -344,16 +345,17 @@ modalButtons.forEach((modalButton) => {
                 </a>
             </div>
         </div>`
-        }
+            }
+        });
     });
-});
 
-closeBtn.addEventListener("click", function () {
-    modal.style.display = "none"
-})
-
-window.addEventListener("click", function (e) {
-    if (e.target == modal) {
+    closeBtn.addEventListener("click", function () {
         modal.style.display = "none"
-    }
-})
+    })
+
+    window.addEventListener("click", function (e) {
+        if (e.target == modal) {
+            modal.style.display = "none"
+        }
+    })
+}

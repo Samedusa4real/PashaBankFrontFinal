@@ -1,16 +1,17 @@
-const modalButtons = document.querySelectorAll("#subscription .subscription-product button")
-console.log(modalButtons);
+export function posTerminalModal() {
+    const modalButtons = document.querySelectorAll("#subscription .subscription-product button")
+    console.log(modalButtons);
 
-let modal = document.getElementById("simpleModal");
-let closeBtn = document.getElementsByClassName("closeBtn")[0];
+    let modal = document.getElementById("simpleModal");
+    let closeBtn = document.getElementsByClassName("closeBtn")[0];
 
-modalButtons.forEach((modalButton) => {
-    modalButton.addEventListener("click", function () {
-        let modalButtonId = modalButton.id
-        console.log(modalButtonId);
-        modal.style.display = 'block'
-        if (modalButtonId === "simple-pos-button") {
-            modal.innerHTML = `<div class="modal-content" style="width: 600px; bottom: 220px;">
+    modalButtons.forEach((modalButton) => {
+        modalButton.addEventListener("click", function () {
+            let modalButtonId = modalButton.id
+            console.log(modalButtonId);
+            modal.style.display = 'block'
+            if (modalButtonId === "simple-pos-button") {
+                modal.innerHTML = `<div class="modal-content" style="width: 600px; bottom: 220px;">
             <div class="modal-header" style="border:none!important;">
                 <h5 class="modal-title">POS–terminal</h5>
                 <span class="closeBtn">&times;</span>
@@ -66,9 +67,9 @@ modalButtons.forEach((modalButton) => {
                 </a>
             </div>
         </div>`
-        }
-        else if(modalButtonId === "department-pos-button"){
-            modal.innerHTML = `<div class="modal-content" style="width: 600px; bottom: 220px;">
+            }
+            else if (modalButtonId === "department-pos-button") {
+                modal.innerHTML = `<div class="modal-content" style="width: 600px; bottom: 220px;">
             <div class="modal-header" style="border:none!important;">
                 <h5 class="modal-title">POS–terminal</h5>
                 <span class="closeBtn">&times;</span>
@@ -166,16 +167,17 @@ modalButtons.forEach((modalButton) => {
                 </a>
             </div>
         </div>`
-        }
+            }
+        });
     });
-});
 
-closeBtn.addEventListener("click", function () {
-    modal.style.display = "none"
-})
-
-window.addEventListener("click", function (e) {
-    if (e.target == modal) {
+    closeBtn.addEventListener("click", function () {
         modal.style.display = "none"
-    }
-})
+    })
+
+    window.addEventListener("click", function (e) {
+        if (e.target == modal) {
+            modal.style.display = "none"
+        }
+    })
+}
